@@ -1,0 +1,24 @@
+{
+  "name": "excel2sketch",
+  "version": "1.0.0",
+  "description": "Converts Excel to Sketch",
+  "main": "index.js",
+  "dependencies": {
+    "read-excel-file": "^4.0.6",
+    "sketch-constructor": "^1.20.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mohamadassaf96/Excel2Sketch.git"
+  },
+  "author": "",
+  "license": "Apache License 2.0",
+  "bugs": {
+    "url": "https://github.com/mohamadassaf96/Excel2Sketch/issues"
+  },
+  "homepage": "https://github.com/mohamadassaf96/Excel2Sketch#readme"
+}

@@ -114,3 +114,12 @@ dist
 .yarn/build-state.yml
 .pnp.*
 
+.DS_Store
+
+### Intellij ###
+# Covers JetBrains IDEs: IntelliJ, RubyMine, PhpStorm, AppCode, PyCharm
+
+*.iml
+
+## Directory-based project format:
+.idea*
