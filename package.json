@@ -2,7 +2,7 @@
   "name": "excel2sketch",
   "version": "1.0.0",
   "description": "Converts Excel to Sketch",
-  "main": "index.js",
+  "main": "src/index.js",
   "dependencies": {
     "fs-extra": "^8.1.0",
     "sketch-constructor": "^1.16.0"
@@ -10,7 +10,7 @@
   "devDependencies": {},
   "scripts": {
     "test": "npm run build",
-    "build": "node index.js",
+    "build": "node src/index.js",
     "start": "npm run build && open dist/output.sketch"
   },
   "repository": {

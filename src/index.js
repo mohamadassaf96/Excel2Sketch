@@ -11,12 +11,13 @@
  * and limitations under the License.
  */
 
+const distFolder = './dist';
 const fs = require('fs-extra');
 const { Sketch, Page, Artboard, SharedStyle } = require('sketch-constructor');
-const Swatch = require('./Swatch'); // custom component
+const Swatch = require('./swatch'); // custom component
 
 // Output directory
-fs.ensureDirSync('./dist');
+fs.ensureDirSync(distFolder);
 
 const colors = [
   {
@@ -85,6 +86,6 @@ sketch.addPage(page);
 // sketch.addArtboard( page.getID(), artboard );
 
 // Build the sketch file
-sketch.build('./dist/output.sketch').then(() => {
+sketch.build(distFolder+'/output.sketch').then(() => {
   console.log('Built!');
 });
