@@ -9,5 +9,5 @@ npm install
 
 ## Run the app
 ```
-npm test
+npm start
 ```
