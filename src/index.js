@@ -18,9 +18,13 @@ const excelReader = require('./excel-reader/reader');
 const sketch = require('./builders/sketch/sketch')
 
 // Output directory
-fs.ensureDirSync(distFolder);
+let destination = fs.ensureDirSync(distFolder);
+if (destination != null){
+    console.log("Destination was created: " + destination)
+}
 
-let excelData = excelReader.read('./data/test.xls');
-
+let excelData = excelReader.read('./src/data/test.xlsx');
+console.log("Data retrieved from xlsx");
+console.log(excelData);
 // Build the sketch file
 sketch.build(distFolder, excelData);
