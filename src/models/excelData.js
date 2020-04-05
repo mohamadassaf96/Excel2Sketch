@@ -1,6 +1,6 @@
 module.exports = class excelData {
-    constructor(title, data) {
+    constructor(title, jsonData) {
         this.title = title;
-        this.data = data;
+        this.data = jsonData;
     }
 }
