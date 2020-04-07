@@ -16,31 +16,40 @@ const { Group, Text, Rectangle } = require('sketch-constructor');
 class Swatch extends Group {
   constructor(args) {
     super({ frame: args.frame });
-    const swatchColor = new Rectangle({
-      width: 200,
-      height: 100,
-      x: 0,
-      y: 0,
-      name: args.value,
-      style: {
+    const style = args.fill ? 
+      {
         fills: [
           {
             color: args.value,
           },
         ],
-      },
+      } 
+    : {
+        borders: [
+          {
+            color: args.value,
+          },
+        ],
+      }; 
+    const swatchColor = new Rectangle({
+      width: 318,
+      height: 318,
+      x: 0,
+      y: 0,
+      name: args.value,
+      style: style
     });
 
     const swatchLabel = new Text({
       string: args.label,
       name: args.label,
-      fontSize: 24,
-      color: '#ccc',
+      fontSize: 16,
+      color: 'black',
       frame: {
         width: 200,
         height: 50,
-        x: 0,
-        y: 120,
+        x: 140,
+        y: 159,
       },
     });
 
