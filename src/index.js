@@ -12,6 +12,4 @@ if (destination != null){
 
 let excelData = excelReader.read('./data/test.xlsx');
 console.log("Data retrieved from xlsx");
-//console.log(excelData);
-// Build the sketch file
-sketch.rowBuilder(distFolder, excelData.title, excelData.data[1]);
+sketch.rowBuilder(distFolder, excelData);
