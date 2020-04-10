@@ -1,16 +1,15 @@
 # Excel2Sketch
-Transform Excel spreadsheets describing a diagram into a Sketch diagram
-
+Transform an Excel spreadsheet describing a diagram into a Sketch diagram.
 ## Install the app
-checkout the app and run
+Checkout the app and run
 ```
 npm install 
 ```
 
 ## Run the app
+* Insert Excel file into root/data/
+* Run
 ```
 npm start
 ```
-
-## xlsx file definition
-- The Sheet title is considered the title of the created file.
+* Generated sketch file is dumped in root/dest/ under the same title as the Excel sheet
