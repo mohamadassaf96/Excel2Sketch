@@ -12,7 +12,7 @@
   "scripts": {
     "test": "npm run build",
     "build": "node src/index.js",
-    "start": "npm run build && open dist/output.sketch"
+    "start": "npm run build && open dest/output.sketch"
   },
   "repository": {
     "type": "git",

@@ -123,3 +123,6 @@ dist
 
 ## Directory-based project format:
 .idea*
+
+## Ignore the destination
+dest
